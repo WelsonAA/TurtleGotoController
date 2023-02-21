@@ -1,0 +1,6 @@
+<launch>
+<rosparam command ="load" file="$(find turtlesim_cleaner)/config/turtle.yaml"/>
+<param name="goalX" type="int" value="7" />
+<param name="goalY" type="int" value="8" />
+<node name="ready_node" pkg="turtlesim_cleaner" type="ready.py" output="screen" />
+</launch>
